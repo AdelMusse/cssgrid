@@ -1,5 +1,4 @@
 .zone {
-    padding:30px 50px;
     cursor:pointer;
     color:#FFF;
     font-size:2em;
@@ -14,29 +13,32 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
-
 .container {
     display: grid;
-    grid-template-rows: repeat(auro);
 }
-.green nav {
+
+.red {
     display: grid;
+    grid-template-rows: repeat(12, 1fr);
 }
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+
+.head {
+    grid-column: 9/5;
+    grid-row: 5/5;
 }
-.red h1{
-    padding: 20%;
-    text-align: center;
+
+img {
+    width: 400px;
+    height: 400px;
 }
-.blue container{
-    display:grid;
-    grid-template-rows: 200px;
+
+.image-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
-.blue img{
-    width: 30%;
+
+.image {
+    background-color: gray;
 }
 /***********************************************************************
  *  Green Background
