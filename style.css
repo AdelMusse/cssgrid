@@ -13,6 +13,17 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+li .contact {
+    grid-column: -2;
+}
+
 .container {
     display: grid;
 }
@@ -28,17 +39,18 @@
 }
 
 img {
+    align-self: center;
     width: 400px;
     height: 400px;
 }
 
-.image-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
-
 .image {
     background-color: gray;
+}
+.image-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 }
 /***********************************************************************
  *  Green Background
